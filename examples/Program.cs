@@ -1,12 +1,13 @@
 ﻿using System;
+using Web3n;
 
-namespace examples
+class Program
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+  static void Main(string[] args)
+  {
+
+    var client = new Web3n.Client();
+    client.Send("test");
+
+  }
 }
